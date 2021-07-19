@@ -26,7 +26,7 @@ height1, width1, chan1 = img.shape
 type_face = type_path # ChangeFacePos || faceSwap
 
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor("C:/Users/Halo7/Desktop/opencv-python/shapes/shape_predictor_68_face_landmarks.dat")
+predictor = dlib.shape_predictor("./shapes/shape_predictor_68_face_landmarks.dat")
 
 if cap.isOpened():
     width2 = math.floor(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
